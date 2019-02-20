@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #headWrap{
     width:100%;
     margin: 0 auto;
@@ -19,7 +25,7 @@ header{
 
 #logoName{
     color: #ffffff;
-    padding: 10px;
+    padding: 20px;
 }
 
 #logo{
@@ -30,7 +36,8 @@ header{
 nav{
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 50%;
+    transform: translate(0%, 50%);
 }
 
 ul{
@@ -43,11 +50,12 @@ ul{
 li{
         display: inline-block;
         border-right: 1px solid #777777;
-        padding: 5px;
+        padding: 0px 10px;
 }
 
 li:last-child{
     border-right:none;
+    padding-right: 0;
 }
 
 a{
@@ -64,10 +72,11 @@ body{
 #wrapper{
     background-image: url("../images/dark-honeycomb.png");
     background-repeat: repeat;
-    padding: 20px;
     width: 100%;
-    overflow: auto;
     clear: both;
+    padding: 20px;
+    padding-bottom:88px;
+    overflow: auto;
 }
 
 #content{
@@ -87,11 +96,11 @@ h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 #secTitle{
-    margin-left: 20px;
+    margin: 0.67em 0 0.67em 20px;
 }
 
 #selfPic{
@@ -146,21 +155,23 @@ input[type=submit]{
 
 }
 
-#blueStrip{
-    background-color: #4aaaa5;
-    width: 100%;
-    height: 5px;
-    margin-bottom: 0;
-}
-
 footer{
     background-color: #666666;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    /* position: fixed;
+    border-top: 8px solid #4aaaa5;
+    position: fixed;
     bottom: 0;
     left: 0;
-    right: 0; */
+    right: 0;
+    height: 60px;
+}
+
+#footerText{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: lightgray;
+    font-size: 10px;
+    padding-bottom: 5px;
+    transform: translate(-50%, 0%);
 }
 
